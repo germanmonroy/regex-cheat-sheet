@@ -215,15 +215,16 @@
 ## Positive and Negative Lookahead
 ***Note:*** a positive lookahead is used as `(?=...)` and a negative lookahead is used as `(?!...)`.
 ```js
-  let sampleWord = "astronaut";
+  let sampleWord = "astr1on11aut";
   let pwRegex = /(?=\w{6})(?=\w*\d{2})/;
   let result = pwRegex.test(sampleWord);
-  console.log(result) // false
+  console.log(result) // true
 ```
 
 ## Check For Mixed Grouping of Characters
+***Note:*** to check for groups of characters using a Regular Expression use parentheses `()`.
 ```js
-  let myString = "Eleanor Roosevelt";
+  let myString = "Franklin D. Roosevelt";
   let myRegex = /(Franklin|Eleanor).*Roosevelt/;
   let result = myRegex.test(myString);
   console.log(result) // true
