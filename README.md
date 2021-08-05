@@ -27,8 +27,8 @@
 ## Ignore Case While Matching
 ```js
   let myString = "German";
-  let fccRegex = /gErmaN/i;
-  let result = fccRegex.test(myString);
+  let nameRegex = /gErmaN/i;
+  let result = nameRegex.test(myString);
   console.log(result) // true
 ```
 
